@@ -8,23 +8,24 @@ const face = document.querySelector('.face__inside');
 function collector() {
     const selector = document.querySelector('.selector').value;
         if (selector === 'how') {
-        face.innerHTML = '<div class="face__inside">: ?</div>';
+        face.innerHTML =' : ?';
         } else if (selector === 'feliz') {
-        face.innerHTML = '<div class="face__inside">: )</div>';    
+        face.innerHTML = ': )';    
         } else if (selector === 'triste') {
-        face.innerHTML = '<div class="face__inside">: (</div>';    
+        face.innerHTML = ': (';    
         }     
     }
 function random() {
-    let random = Math.random() * 101;
-    let parse = parseInt(random);
-    let pareNone = parse % 2;
+    const random = Math.random() * 101;
+    const parse = parseInt(random);
+    const pareNone = parse % 2;
     if (pareNone > 0) {
         return main.classList.toggle('switch');
     } 
 }
 function both() {
-    return random() + collector();
+    random() 
+    collector();
 }
 
 buttonUpdate.addEventListener('click', both);
