@@ -1,4 +1,4 @@
-'use stric'
+'use strict'
 // REPASO INTERMEDIO JAVASCRIPT PARECE MENTIRA... LO VAMOS A LOGRAR//
 
 const main = document.querySelector('.main');
